@@ -27,7 +27,7 @@ body {
     width: 100%;
     position: fixed;
     bottom: 0;
-    height: 45px;
+    height: 55px;
 }
 
 .masque {
@@ -50,35 +50,22 @@ body {
 }
 
 .nav_item:hover {
-    color: red;
+    color: #fff;
     font-size: 25px;
     transition: .2s cubic-bezier(0.68, -0.19, 0.32, 1.6);
     border-radius: 50%;
-    transform: translateY(-50px);
-}
-
-.nav_item:hover::before {
-    animation: mo .2s;
-    transition: 1s;
-    z-index: -1;
-    content: "";
-    position: absolute;
-    width: 65px;
-    background-color: rgb(241, 241, 241);
-    box-shadow: inset -2px -12px 14px -9px rgb(177, 177, 177);
-    height: 60px;
-    border-radius: 50%;
-    transform: translateY(30px);
+    transform: translateY(-18px);
 }
 
 .nav_item:hover::after {
+    border: 8px solid #fff;
+    background-color: red;
     transition: .5s;
     border-radius: 50%;
     z-index: -1;
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: white;
     content: '';
 }
 
